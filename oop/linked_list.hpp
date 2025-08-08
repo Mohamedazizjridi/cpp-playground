@@ -2,40 +2,33 @@
 
 #include <iostream>
 
-// Node structure for doubly linked list
-template <typename T>
-struct Node {
-    T data;
-    Node<T>* prev;
-    Node<T>* next;
+// Node for the doubly linked list
+class Node {
+public:
+    int data;
+    Node* prev;
+    Node* next;
 
-    Node(const T& value)
+    explicit Node(int value)
         : data(value), prev(nullptr), next(nullptr) {}
 };
 
-// Doubly linked list class
-template <typename T>
+// Doubly linked list class declaration
 class DoublyLinkedList {
 public:
     DoublyLinkedList();
     ~DoublyLinkedList();
 
-    void push_front(const T& value);
-    void push_back(const T& value);
+    void push_front(int value);
+    void push_back(int value);
+
     void pop_front();
     void pop_back();
 
     void print_forward() const;
     void print_backward() const;
 
-    bool empty() const;
-    size_t size() const;
-
 private:
-    Node<T>* head;
-    Node<T>* tail;
-    size_t length;
+    Node* head;
+    Node* tail;
 };
-
-// Include implementation
-#include "linkedlist.cpp"
