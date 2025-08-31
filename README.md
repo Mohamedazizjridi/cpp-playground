@@ -2,7 +2,7 @@
 
 > A hands-on C++ learning repository—covering basics, memory, OOP, templates, operators, and more.
 
-## 🗂️ Structure
+## Structure
 
 - **basics/**  
   Namespaces, macros vs inline functions, type safety, etc.
@@ -17,7 +17,7 @@
 - **examples/**  
   Demos combining multiple features.
 
-## 🚀 Build & Run
+##  Build & Run
 
 ```bash
 git clone https://github.com/your-username/cpp-playground.git
